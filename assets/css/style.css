@@ -1,0 +1,61 @@
+
+:root{
+    --cor-principal: #001D57;
+}
+    
+
+*{
+    margin: 0; /*espaço após a borda, um elemento significa 0 para todas as direções*/
+    padding: 0; /*espaço entre conteúdo e borda, um elemento significa 0 para todas as direções*/
+    box-sizing: border-box; /*Para que padding ou border não somar com o tamanho do nosso elemento*/
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    height: 100vh; /*Ocupa 100% da altura do navegador, depende do dispositivo*/
+}
+
+.inteface{
+    max-width: 80rem; /*Largura Máxima*/
+    margin: 0 auto; /*Define espaço norte e sul como 0 e laterais automáticas*/
+}
+
+
+/*Cabeçalho*/
+
+header{
+    padding: 2.5rem 4%; /*Espaço entre contéudo e a borda*/
+}
+
+header>.inteface{
+    display: flex; /*Modelo Flexbox*/
+    align-items: center; /*Orientação Vertical*/
+    justify-content: space-between; /*Orientação Horizontal*/
+}
+
+
+header a {
+    color: #5c5c5c; /*Cor do conteúdo*/
+    text-decoration: none;
+    display: inline-block; /*Disposição Horizontal com largura e altura definidas*/
+    transition: .2s;
+}
+
+header nav.menu-desktop a:hover {
+    color: var(--cor-principal); /*Define a cor do conteúdo com a váriavel cor-principal*/
+    transform: scale(1.05); /*Aumenta o tamanho do contéudo*/
+}
+
+header nav ul {
+    list-style-type: none; /*Para não aparecer os pontinhos de lista*/
+}
+
+header nav.menu-desktop ul li {
+    display: inline-block; /*Disposição Horizontal com largura e altura definidas*/
+    padding: 0 2.5rem; /*Espaço entre contéudo e a borda*/
+}
+
+.menu-mobile{
+    display: none; /*Para não aparecer dois menus*/
+}
