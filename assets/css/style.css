@@ -25,10 +25,11 @@ body {
 /*Cabeçalho*/
 
 header{
-    padding: 2.5rem 4%; /*Espaço entre contéudo e a borda*/
+    padding: 1.5rem 4%; /*Espaço entre contéudo e a borda*/
+    background-color: aliceblue;
 }
 
-header>.inteface{
+header .top-nav{
     display: flex; /*Modelo Flexbox*/
     align-items: center; /*Orientação Vertical*/
     justify-content: space-between; /*Orientação Horizontal*/
@@ -53,9 +54,21 @@ header nav ul {
 
 header nav.menu-desktop ul li {
     display: inline-block; /*Disposição Horizontal com largura e altura definidas*/
-    padding: 0 2.5rem; /*Espaço entre contéudo e a borda*/
+    padding: 0 2rem; /*Espaço entre contéudo e a borda*/
 }
 
 .menu-mobile{
     display: none; /*Para não aparecer dois menus*/
+}
+
+
+/*Main -> Seções*/
+main{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+.page{
+    background-color: aqua;
+    display: flex;
 }
