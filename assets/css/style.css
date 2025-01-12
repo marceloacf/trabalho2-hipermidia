@@ -3,12 +3,13 @@
     --cor-principal: #001D57;
 }
     
-
+/*Normalização responsável para deixar em um formato padrão para todos os navegadores*/
 *{
     margin: 0; /*espaço após a borda, um elemento significa 0 para todas as direções*/
     padding: 0; /*espaço entre conteúdo e borda, um elemento significa 0 para todas as direções*/
     box-sizing: border-box; /*Para que padding ou border não somar com o tamanho do nosso elemento*/
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif; /*Utiliza a fonte no argumento mais à esquerda e caso não encontre, utiliza sans-serif*/
+    max-width: 80rem;
 }
 
 body {
@@ -27,6 +28,7 @@ body {
 header{
     padding: 1.5rem 4%; /*Espaço entre contéudo e a borda*/
     background-color: var(--cor-principal);
+    max-width: 80rem;
 }
 
 header .top-nav{
@@ -64,37 +66,40 @@ header nav.menu-desktop ul li {
 
 /*Perguntar como funciona cada bloco desse: .nome{} header tag {} header tag.nome{} header > {}*/
 /*Main -> Seções*/
-main{
-    display: flex; /*Modelo Flexbox*/
-    flex-direction: column;
-}
-
-.page{
-    background-color: #ffffff;
-}
 
 .frame-inicio{
     display: flex; /*Modelo Flexbox*/
-    padding: 22.5rem 24.375rem; /*Espaço entre o elemento e borda, dois argumentos significam: espaço vertical e espaço horizontal*/
-    background-color: rgb(184, 99, 99);
+    margin: 2rem 2rem;
+    /*padding: 22.5rem 24.375rem; /*Espaço entre o elemento e borda, dois argumentos significam: espaço vertical e espaço horizontal*/
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    max-width: 80rem;
 }
 
 .info-inicio{
     display:flex; /*Modelo Flexbox*/
     justify-content: center; /*Orientação Horizontal*/
-    align-items: center; /*Orientação Vertical*/
+    align-items: start; /*Orientação Vertical*/
     flex-direction: column; /*Blocos no formato de coluna (padrão é linha)*/
 }
 
+.info-inicio p{
+    padding-right: 1rem;
+}
+
+
+
 .frame-sobre{
     display: flex; /*Modelo Flexbox*/
-    padding: 22.5rem 24.375rem; /*Espaço entre o elemento e borda, dois argumentos significam: espaço vertical e espaço horizontal*/
+    padding: 5rem rem; /*Espaço entre o elemento e borda, dois argumentos significam: espaço vertical e espaço horizontal*/
     background-color: beige;
 }
 
 .frame-produtos{
     display: flex; /*Modelo Flexbox*/
-    padding: 22.5rem 24.375rem; /*Espaço entre o elemento e borda, dois argumentos significam: espaço vertical e espaço horizontal*/
+    padding: 10rem auto; /*Espaço entre o elemento e borda, dois argumentos significam: espaço vertical e espaço horizontal*/
     background-color: rgb(224, 224, 153);
 }
 
@@ -104,13 +109,13 @@ main{
 
 .frame-livre{
     display: flex; /*Modelo Flexbox*/
-    padding: 22.5rem 24.375rem; /*Espaço entre o elemento e borda, dois argumentos significam: espaço vertical e espaço horizontal*/
+    padding: 5rem rem; /*Espaço entre o elemento e borda, dois argumentos significam: espaço vertical e espaço horizontal*/
     background-color: rgb(189, 131, 93);
 }
 
 .frame-comentarios{
     display: flex; /*Modelo Flexbox*/
-    padding: 22.5rem 24.375rem; /*Espaço entre o elemento e borda, dois argumentos significam: espaço vertical e espaço horizontal*/
+    padding: 5rem rem; /*Espaço entre o elemento e borda, dois argumentos significam: espaço vertical e espaço horizontal*/
     background-color: rgb(220, 228, 245);
 }
 
@@ -120,6 +125,36 @@ main{
 
 .frame-contatos{
     display: flex; /*Modelo Flexbox*/
-    padding: 22.5rem 24.375rem; /*Espaço entre o elemento e borda, dois argumentos significam: espaço vertical e espaço horizontal*/
+    padding: 5rem rem; /*Espaço entre o elemento e borda, dois argumentos significam: espaço vertical e espaço horizontal*/
     background-color: rgb(124, 42, 100);
 }
+
+/*Utilitários*/
+.mt-1{
+    margin-top: 1rem;
+}
+
+.mt-2{
+    margin-top: 2rem;
+}
+
+.mb-1{
+    margin-bottom: 1rem;
+}
+
+.mb-2{
+    margin-bottom: 2rem;
+}
+
+.mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-center{
+    text-align: center;
+}
+
+
+/*Responsividade*/
+
