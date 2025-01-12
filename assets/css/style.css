@@ -76,8 +76,42 @@ main{
 .frame-inicio{
     display: flex;
     padding: 22.5rem 24.375rem;
+    background-color: rgb(184, 99, 99);
 }
+
 .info-inicio{
     display:flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
+}
+
+.frame-sobre{
+    display: flex;
+    padding: 22.5rem 24.375rem;
+    background-color: beige;
+}
+
+.frame-produtos{
+    display: flex;
+    padding: 22.5rem 24.375rem;
+    background-color: rgb(224, 224, 153);
+}
+
+.frame-livre{
+    display: flex;
+    padding: 22.5rem 24.375rem;
+    background-color: rgb(189, 131, 93);
+}
+
+.frame-comentarios{
+    display: flex;
+    padding: 22.5rem 24.375rem;
+    background-color: rgb(220, 228, 245);
+}
+
+.frame-contatos{
+    display: flex;
+    padding: 22.5rem 24.375rem;
+    background-color: rgb(124, 42, 100);
 }
