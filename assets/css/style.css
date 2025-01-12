@@ -26,7 +26,7 @@ body {
 
 header{
     padding: 1.5rem 4%; /*Espaço entre contéudo e a borda*/
-    background-color: aliceblue;
+    background-color: var(--cor-principal);
 }
 
 header .top-nav{
@@ -44,7 +44,7 @@ header a {
 }
 
 header nav.menu-desktop a:hover {
-    color: var(--cor-principal); /*Define a cor do conteúdo com a váriavel cor-principal*/
+    color: #ffffff; /*Define a cor do conteúdo com a váriavel cor-principal*/
     transform: scale(1.05); /*Aumenta o tamanho do contéudo*/
 }
 
@@ -62,13 +62,22 @@ header nav.menu-desktop ul li {
 }
 
 
+/*Perguntar como funciona cada bloco desse: .nome{} header tag {} header tag.nome{} header > {}*/
 /*Main -> Seções*/
 main{
     display: flex;
     flex-direction: column;
-    height: auto;
 }
+
 .page{
-    background-color: aqua;
+    background-color: #ffffff;
+}
+
+.frame-inicio{
     display: flex;
+    padding: 22.5rem 24.375rem;
+}
+.info-inicio{
+    display:flex;
+    flex-direction: column;
 }
