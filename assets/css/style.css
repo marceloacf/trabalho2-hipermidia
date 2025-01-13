@@ -15,7 +15,9 @@
 body {
     background-color: #ffffff;
     height: 100vh; /*Ocupa 100% da altura do navegador, depende do dispositivo*/
+    
 }
+
 
 .inteface{
     max-width: 80rem; /*Largura Máxima*/
@@ -26,7 +28,7 @@ body {
 /*Cabeçalho*/
 
 header{
-    padding: 1.5rem 4%; /*Espaço entre contéudo e a borda*/
+    padding: 1.5rem 2rem; /*Espaço entre contéudo e a borda*/
     background-color: var(--cor-principal);
     max-width: 80rem;
 }
@@ -78,6 +80,11 @@ header nav.menu-desktop ul li {
     max-width: 80rem;
 }
 
+.frame-inicio img{
+    display: block;
+
+}
+
 .info-inicio{
     display:flex; /*Modelo Flexbox*/
     justify-content: center; /*Orientação Horizontal*/
@@ -98,12 +105,15 @@ header nav.menu-desktop ul li {
 }
 
 .frame-produtos{
-    display: flex; /*Modelo Flexbox*/
     padding: 10rem auto; /*Espaço entre o elemento e borda, dois argumentos significam: espaço vertical e espaço horizontal*/
     background-color: rgb(224, 224, 153);
 }
 
+.frame-produtos h1{
+    text-align: center;
+}
 .frame-produtos ul{
+    display: flex;
     list-style-type: none; /* Remove os pontos nas listas*/
 }
 
@@ -114,19 +124,31 @@ header nav.menu-desktop ul li {
 }
 
 .frame-comentarios{
-    display: flex; /*Modelo Flexbox*/
     padding: 5rem rem; /*Espaço entre o elemento e borda, dois argumentos significam: espaço vertical e espaço horizontal*/
     background-color: rgb(220, 228, 245);
 }
 
+.frame-comentarios h1{
+    text-align: center;
+}
+
 .frame-comentarios ul{
+    display: flex;
     list-style-type: none;
 }
 
 .frame-contatos{
-    display: flex; /*Modelo Flexbox*/
     padding: 5rem rem; /*Espaço entre o elemento e borda, dois argumentos significam: espaço vertical e espaço horizontal*/
     background-color: rgb(124, 42, 100);
+}
+
+.frame-contatos h1{
+    text-align: center;
+}
+
+
+footer {
+    display: grid;
 }
 
 /*Utilitários*/
