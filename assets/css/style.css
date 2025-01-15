@@ -9,7 +9,6 @@
     padding: 0; /*espaço entre conteúdo e borda, um elemento significa 0 para todas as direções*/
     box-sizing: border-box; /*Para que padding ou border não somar com o tamanho do nosso elemento*/
     font-family: 'Poppins', sans-serif; /*Utiliza a fonte no argumento mais à esquerda e caso não encontre, utiliza sans-serif*/
-    max-width: 80rem;
 }
 
 body {
@@ -19,18 +18,11 @@ body {
 }
 
 
-.inteface{
-    max-width: 80rem; /*Largura Máxima*/
-    margin: 0 auto; /*Define espaço norte e sul como 0 e laterais automáticas*/
-}
-
-
 /*Cabeçalho*/
 
 header{
     padding: 1.5rem 2rem; /*Espaço entre contéudo e a borda*/
     background-color: var(--cor-principal);
-    max-width: 80rem;
 }
 
 header .top-nav{
@@ -81,7 +73,8 @@ header nav.menu-desktop ul li {
 }
 
 .frame-inicio img{
-    display: block;
+    display: flex;
+    width: 50%;
 
 }
 
@@ -100,8 +93,13 @@ header nav.menu-desktop ul li {
 
 .frame-sobre{
     display: flex; /*Modelo Flexbox*/
-    padding: 5rem rem; /*Espaço entre o elemento e borda, dois argumentos significam: espaço vertical e espaço horizontal*/
+    align-items: center;
     background-color: beige;
+}
+
+.frame-sobre img{
+    display: flex;
+    width: 50%;
 }
 
 .frame-produtos{
@@ -148,7 +146,8 @@ header nav.menu-desktop ul li {
 
 
 footer {
-    display: grid;
+    display: flex;
+    justify-content: space-between;
 }
 
 /*Utilitários*/
@@ -171,6 +170,11 @@ footer {
 .mx-auto{
     margin-left: auto;
     margin-right: auto;
+}
+
+.mlr-2{
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 .text-center{
